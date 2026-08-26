@@ -57,6 +57,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-git add .github/workflows/hugo.yml
-git commit -m "Add Hugo GitHub Pages deployment"
-git status
