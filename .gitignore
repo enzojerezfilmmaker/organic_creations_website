@@ -1,0 +1,15 @@
+# Hugo
+/public/
+/resources/
+/.hugo_build.lock
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Working copies and backups
+*.docx
+*.backup

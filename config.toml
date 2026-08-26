@@ -1,0 +1,81 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Creating organic art"
+  keywords = "homepage, blog, organic, creation, film, actors, actresses, movies, director, projects"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+[languages]
+  [languages.en]
+    title = "Organic Creations Group e.V."
+    subtitle = "culture networkers"
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "organic creations"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+	# You can create a language based menu
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "about"
+        url = "/about"
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "events"
+        name = "events"
+        url = "/events"
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "testimonies"
+        name = "testimonies"
+        url = "/testimonies"
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "showcase"
+        url = "/showcase"
+        weight = 4
+      [[languages.en.menu.main]]
+        identifier = "legal_notice"
+        name = "legal"
+        url = "/legal_notice"
+        weight = 5
+
+# And you can even create generic menu
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "testimonies"
+    name       = "Testimonies"
+    url        = "/testimonies"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+
+[markup.goldmark.renderer]
+unsafe = true
