@@ -13,3 +13,9 @@
 # Working copies and backups
 *.docx
 *.backup
+
+# Hugo generated files inside theme
+themes/hello-friend-ng/resources/_gen/
+
+# Local backup
+themes/hello-friend-ng_BACKUP_2026-08-26/
